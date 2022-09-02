@@ -873,7 +873,3 @@ URL: GET /comments?articleId=1
     }
 ]
 ```
-
-## 标签管理
-
-内部测试中，功能目前还不稳定
