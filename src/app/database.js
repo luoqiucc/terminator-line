@@ -11,7 +11,9 @@ const connections = mysql.createPool({
 })
 
 connections.getConnection((error, connection) => {
-    if (error) throw new Error(String.MYSQL_CONNECT_FAIL)
+    if (error) {
+        throw new Error(String.MYSQL_CONNECT_FAIL)
+    }
 
     connection.connect((error) => {
         console.log(String.MYSQL_CONNECT_SUCCESS)
