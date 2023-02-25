@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const dotenv = require('dotenv')
 
-dotenv.config({path: path.join(__dirname, '..', '..', '.env')})
+dotenv.config({path: path.join(__dirname, '..', '..', '.env.development')})
 
 const PRIVATE_KEY = fs.readFileSync(path.join(__dirname, 'key', 'private.key'), 'utf-8')
 const PUBLIC_KEY = fs.readFileSync(path.join(__dirname, 'key', 'public.key'), 'utf-8')

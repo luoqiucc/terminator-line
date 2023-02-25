@@ -1,6 +1,4 @@
 module.exports = {
-    HELWOR: 'helwor',
-
     // BASE
     TERMINATOR_LINE:'terminator line',
     SERVER_START: '服务已启动在端口',

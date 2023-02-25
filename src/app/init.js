@@ -54,6 +54,7 @@ const createTable = async () => {
     await init.createUserTable()
     await init.createArticleTable()
     await init.createCommentTable()
+    return "success"
 }
 
 module.exports = {

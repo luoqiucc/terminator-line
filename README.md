@@ -8,7 +8,12 @@
 
 **! 使用时注意替换 /src/app/key 中的公钥与私钥文件，文件命名保持一致**
 
-配置 **.env** 文件
+配置 **.env.development** 文件 (如果没有请在项目根目录下创建该文件)
+```javascript
+// /src/app/config.js
+// ! 系统根据文件名加载该配置文件，保证路径正确，文件名一致即可
+dotenv.config({path: path.join(__dirname, '..', '..', '.env.development')})
+```
 
 | 参数           | 说明             |
 | -------------- | ---------------- |

@@ -12,6 +12,8 @@ server.use(koaStatic(path.join(__dirname, '..', '..', 'public')))
 server.use(bodyParser())
 scanner(server)
 server.on('error', error);
-init.createTable()
+init.createTable().then((data) => {
+    console.log("建表结果：" + data)
+})
 
 module.exports = server
