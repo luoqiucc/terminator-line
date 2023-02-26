@@ -27,7 +27,7 @@ class User {
 
     async getUserList(page, size) {
         const statement = `SELECT id, username, bio, authority FROM user LIMIT ?, ?`
-        const [result] = await mysql.execute(statement, [(page - 1) * size, size])
+        const [result] = await mysql.execute(statement, [(page - 1) * size + '', size + ''])
         return result
     }
 
@@ -55,7 +55,7 @@ class User {
         return result
     }
 
-    async isExistById(id){
+    async isExistById(id) {
         const statement = `SELECT id FROM user WHERE id = ?`
         const [result] = await mysql.execute(statement, [id])
         return !!result.length;

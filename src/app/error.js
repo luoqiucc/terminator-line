@@ -3,7 +3,7 @@ const error = (errorType, ctx) => {
 
     switch (errorType.error_code) {
         case '1001':
-            status = 400
+            status = 403
             break
         case '1002':
             status = 401

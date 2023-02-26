@@ -12,6 +12,7 @@ const {
 
 const verifyLogin = async (ctx, next) => {
     const {email = '', password = ''} = ctx.request.body
+
     if (!email.trim() || !password.trim()) {
         return throwError(ctx, errorType.formEmpty)
     }
