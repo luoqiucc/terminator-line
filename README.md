@@ -1,4 +1,4 @@
-> ! 这个项目已经停止维护，请转到该项目的重构版本 [terminator_line_bms](https://github.com/zhangao204/terminator-line-bms) 。两者在功能方面并无较大差异，重构版本改进了功能实现，使用了更优雅的代码写法，并用sequelize框架来进行数据库访问
+> ! 这个项目已经停止维护，请转到该项目的重构版本 [terminator_line_bms](https://github.com/zhangao204/terminator-line-bms) 。两者在功能方面并无较大差异，重构版本改进了功能实现，使用了更优雅的代码写法，并用sequelize框架规范了数据库访问
 
 
 ## 晨昏线简介
